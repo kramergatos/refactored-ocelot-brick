@@ -3,6 +3,8 @@ import { nanoid } from 'nanoid'
 export default function Api() {
   const numCustomers = 100
   const numTransactions = 1000
+  const minPrice = 1
+  const maxPrice = 500
   const today = new Date()
   const thisMonth = today.getMonth()
   const customers = []
@@ -28,7 +30,7 @@ export default function Api() {
       customer = Math.floor(Math.random() * customers.length)
       data.push({
         customerId: customers[customer],
-        price: Math.floor(Math.random() * 500) + 1,
+        price: Math.floor(Math.random() * maxPrice) + minPrice,
         date: getRandomDate()
       })
     }
@@ -81,7 +83,7 @@ export default function Api() {
       results[id] = updateCustomerPoints(results[id], month, points)
     }
   }
-  
+
   function init() {
     createCustomers()
     createData()
