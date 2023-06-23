@@ -1,0 +1,42 @@
+body {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+header {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+.table{
+  clear: both;
+  display: block;
+  float: left;
+  width: 800px;
+}
+.row{
+  clear: both;
+  display: block;
+  float: left;
+  font: normal 12px/16px Helvetica, Arial;
+  margin: 5px 0;
+  padding: 0;
+  width: 100%;
+}
+.row_header{
+  background: #ccc;
+  font: bold 12px/16px Helvetica, Arial;
+  padding: 5px 0;
+}
+.col{
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0 5px;
+  width: 120px;
+}
+.col_id{
+  width: 250px;
+}
