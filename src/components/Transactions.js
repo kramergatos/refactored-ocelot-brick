@@ -20,6 +20,7 @@ function Transactions() {
   useEffect(() => {
     fetchData()
     console.log(results)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   if(isLoading) {

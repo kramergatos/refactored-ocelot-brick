@@ -5,9 +5,9 @@ function App() {
   return (
     <div>
       <header>
-        <p>
+        <h1>
           Transactions
-        </p>
+        </h1>
       </header>
       <Transactions />
     </div>
